@@ -6,6 +6,20 @@ html {
     line-height: 1.8;
 }
 
+/* Navigation Bar */
+nav a.this::before {
+    content: "\276C\2000";
+}
+
+nav a.this::after {
+    content: "\2000\276D";
+}
+
+nav a::before,
+nav a::after {
+    content: "\2002\2008";
+}
+
 /* Create a Parallax Effect */
 .bgimg-1,
 .bgimg-2,
@@ -18,7 +32,7 @@ html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    /* background-image: url("/w3images/parallax1.jpg"); */
+    background-image: url("../img/ouprpe.svg");
     min-height: 100%;
 }
 
@@ -37,9 +51,21 @@ html {
 .w3-wide {
     letter-spacing: 10px;
 }
-
 .w3-hover-opacity {
     cursor: pointer;
+}
+h3 {
+    background: url("../img/header.svg")
+        no-repeat left;
+    background-size: cover;
+    box-shadow: 0 10px 5px -5px #000 ;
+}
+
+/* About Me "Embedded" Content */
+div.embed {
+    overflow: auto scroll;
+    height: 30vh;
+    scrollbar-color: #000000aa #e7e7e780;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
