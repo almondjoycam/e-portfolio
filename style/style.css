@@ -55,17 +55,29 @@ nav a::after {
     cursor: pointer;
 }
 h3 {
-    background: url("../img/header.svg")
-        no-repeat left;
-    background-size: cover;
+    background-image: url("../img/header.svg");
+    background-color: rgba(205, 134, 63, 0.5);
+    min-width: 100%;
     box-shadow: 0 10px 5px -5px #000 ;
+    margin-top: 2em;
+}
+p {
+    padding: 8px 20px;
+}
+em.goal {
+    display: block;
+    padding: 1em 0.5em 0;
+}
+em.exp {
+    display: block;
+    padding: 0 0.5em 1em;
 }
 
 /* About Me "Embedded" Content */
 div.embed {
     overflow: auto scroll;
     height: 30vh;
-    scrollbar-color: #000000aa #e7e7e780;
+    /* scrollbar-color: #000000aa #e7e7e780; */
 }
 
 /* Turn off parallax scrolling for tablets and phones */
