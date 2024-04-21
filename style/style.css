@@ -119,7 +119,7 @@ div.embed {
         text-align: left;
         list-style-position: inside;
     }
-    div {
+    div.classroom {
         clear: left;
         width: 100%;
         min-height: 50vh;
