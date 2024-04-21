@@ -68,6 +68,15 @@ h4 {
 p {
     padding: 8px 20px;
 }
+img {
+    width: 90%;
+    margin: 1em 0 0;
+}
+ul {
+    text-align: left;
+    width: 90%;
+    margin: 10px;
+}
 em.goal {
     display: block;
     padding: 1em 0.5em 0;
@@ -91,5 +100,28 @@ div.embed {
     .bgimg-3 {
         background-attachment: scroll;
         min-height: 400px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    img {
+        max-width: 30%;
+        max-height: 40vh;
+        object-fit: cover;
+        object-position: 0% 100%;
+        margin: 1em;
+        float: left;
+        display: block;
+    }
+    div ul {
+        margin: 1em;
+        padding: 0;
+        text-align: left;
+        list-style-position: inside;
+    }
+    div {
+        clear: left;
+        width: 100%;
+        min-height: 50vh;
     }
 }
