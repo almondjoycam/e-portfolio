@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Camber's Teaching Portfolio</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lato" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="../style/style.css" />
+    </head>
+
+    <body>
+        <!-- Navbar (sit on top) -->
+        <!-- TODO: change this to actually semantic markup! -->
+        <header class="w3-top">
+            <nav class="w3-bar" id="myNavbar">
+                <a
+                    class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0);"
+                    onclick="toggleFunction()"
+                    title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+                <a
+                    href="../about.html"
+                    class="w3-bar-item w3-button w3-hide-small"
+                    ><i class="fa fa-user" aria-hidden="true"></i> ABOUT</a
+                >
+                <div class="has-submenu">
+                    <a
+                        href="edu200.html"
+                        class="w3-bar-item w3-button w3-hide-small submenu-toggle"
+                        ><i class="fa fa-book" aria-hidden="true"></i> EDU
+                        200</a
+                    >
+                    <ul class="submenu">
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="philosophy.html"
+                                >Philosophy</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="ideal-classroom.html"
+                                >Ideal Classroom</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="communication.html"
+                                >Communicating with Parents</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="instructional-strategies.html"
+                                >Instructional Strategies</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="technology.html"
+                                >Instructional Technology</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="assessment.html"
+                                >Assessment</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Navbar on small screens -->
+            <nav
+                id="navDemo"
+                class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="../about.html" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="edu200.html" class="w3-bar-item w3-button this"
+                    >EDU 200</a
+                >
+            </nav>
+        </header>
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div
+                class="w3-display-middle w3-padding-large w3-black w3-center w3-animate-opacity">
+                <h1 class="w3-xlarge w3-wide">Foundations of Education</h1>
+                <h2 class="w3-large">EDU 200</h2>
+            </div>
+        </div>
+
+        <main class="w3-content w3-center">
+            <h3>Assessment</h3>
+            <p>
+                Entry and exit tickets are very short formative assessments,
+                often containing less than five questions, that provide a quick
+                glimpse of how well students are learning the content on a
+                particular day. Because they are so short, they often do not
+                cause the same testing anxiety that other, more formal
+                assessments may create. Their brevity can also be detrimental,
+                though, because if the lesson was particularly complicated, it
+                can be hard to condense the content accurately.
+            </p>
+            <p>
+                Projects are a form of authentic assessment that allow students
+                to have more freedom and flexibility in demonstrating their
+                content mastery. Some projects that I've experienced as a
+                student have also allowed me to connect new concepts with prior
+                learning and my own personal interests. They can be very
+                difficult for students who may not have strong creative visions
+                or prefer direct instruction, in which case scaffolding, such as
+                templates, may be necessary.
+            </p>
+            <p>
+                Classwork and homework assignments give students an opportunity
+                to practice applying concepts that they learn during class.
+                Without practicing, it can be a lot more difficult to learn and
+                master content. It is important to be conservative with this
+                approach; otherwise, an excess of homework can cause school to
+                bleed in to a student's personal life, health, and
+                responsibilities, and produce a negative effect where it is
+                harder for the students to learn in class.
+            </p>
+            <p>
+                Self-assessments allow the students to reflect on their own
+                mastery, quality of work, and learning standards.
+                Self-assessments include the student in a more active role in
+                determining their grade, and can also provide insights on the
+                student's social-emotional self-image. Because the student has
+                more power in determining their grade in self-assessment,
+                though, they may overestimate or underestimate their own
+                potential.
+            </p>
+            <p>
+                Formal, summative assessments are the tests administered at the
+                end of a unit or term. These are important to gauge how much
+                students have learned over the course of the time period.
+                However, a lot of formal testing environments induce stress in
+                students, and may impact their performance on the assessment to
+                a point where this assessment may not be an accurate reflection
+                of content mastery.
+            </p>
+        </main>
+
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64">
+            <a href="#home" class="w3-button w3-light-grey"
+                ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+            >
+            <p>
+                Powered by
+                <a
+                    href="https://www.w3schools.com/w3css/default.asp"
+                    title="W3.CSS"
+                    target="_blank"
+                    class="w3-hover-text-light-green"
+                    >w3.css</a
+                >
+            </p>
+        </footer>
+
+        <script src="../script/jquery-3.7.0.js"></script>
+        <script src="../script/navbar.js"></script>
+        <script src="../script/navmenu.js"></script>
+    </body>
+</html>

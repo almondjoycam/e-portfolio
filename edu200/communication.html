@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Camber's Teaching Portfolio</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Lato" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="../style/style.css" />
+    </head>
+
+    <body>
+        <!-- Navbar (sit on top) -->
+        <!-- TODO: change this to actually semantic markup! -->
+        <header class="w3-top">
+            <nav class="w3-bar" id="myNavbar">
+                <a
+                    class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                    href="javascript:void(0);"
+                    onclick="toggleFunction()"
+                    title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+                <a
+                    href="../about.html"
+                    class="w3-bar-item w3-button w3-hide-small"
+                    ><i class="fa fa-user" aria-hidden="true"></i> ABOUT</a
+                >
+                <div class="has-submenu">
+                    <a
+                        href="edu200.html"
+                        class="w3-bar-item w3-button w3-hide-small submenu-toggle"
+                        ><i class="fa fa-book" aria-hidden="true"></i> EDU
+                        200</a
+                    >
+                    <ul class="submenu">
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="philosophy.html"
+                                >Philosophy</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="ideal-classroom.html"
+                                >Ideal Classroom</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="communication.html"
+                                >Communicating with Parents</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="instructional-strategies.html"
+                                >Instructional Strategies</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="technology.html"
+                                >Instructional Technology</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="w3-bar-item w3-button"
+                                href="assessment.html"
+                                >Assessment</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Navbar on small screens -->
+            <nav
+                id="navDemo"
+                class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="../about.html" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="edu200.html" class="w3-bar-item w3-button this"
+                    >EDU 200</a
+                >
+            </nav>
+        </header>
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div
+                class="w3-display-middle w3-padding-large w3-black w3-center w3-animate-opacity">
+                <h1 class="w3-xlarge w3-wide">Foundations of Education</h1>
+                <h2 class="w3-large">EDU 200</h2>
+            </div>
+        </div>
+
+        <main class="w3-content w3-center">
+            <h3>Communicating with Parents</h3>
+            <p>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                Email threads provide a critical written record of
+                communications that other media cannot maintain. Mailing lists
+                can broadcast information to an entire group &mdash; for
+                example, all parents of students in a certain class &mdash; but
+                can also remain personal between a teacher and a parent if
+                necessary. Most modern email supports rich text formatting as
+                well, which can provide additional emphasis, and composing the
+                written word affords an opportunity for revision.
+            </p>
+            <p>
+                <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                Many opportunities for in-person communication are already built
+                in to the school year. Parent-teacher conferences give parents a
+                chance to influence the learning experience for their children.
+                Open house events introduce the parents to the team responsible
+                for their child's learning. Teachers can use these opportunities
+                to expand upon their teaching philosophy and class expectations.
+            </p>
+            <p>
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                Parents will very likely be able to access a form of instant
+                messaging with their children's teachers. This can be a
+                necessary form of communication for asking quick questions and
+                providing quick notes. This can also allow parents to engage
+                more in their child's learning experience.
+            </p>
+            <p>
+                <i class="fa fa-folder" aria-hidden="true"></i>
+                Students take home material from school nearly every day, and
+                this constant exchange of information is critical to family
+                involvement in education. Surveys can be an opportunity for the
+                student to assign homework to their parent, who can then inform
+                the teacher directly about how their child learns and behaves.
+                Sending home completed work can encourage students to proudly
+                share their work with their family as well.
+            </p>
+            <p>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                Phone calls are generally the best way to reach someone
+                instantly. These can be used to resolve urgent matters, but
+                should also be used to communicate positive news. In fact,
+                positive news should precede any concerns or requests.
+            </p>
+            <p>
+                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                Class newsletters can be useful for providing updates about the
+                class activities. Like any communication, it is important to
+                maintain honesty, transparency, and respect. Everything,
+                including both the good news and the bad news, is of equal
+                importance.
+            </p>
+        </main>
+        <!-- Footer -->
+        <footer class="w3-center w3-black w3-padding-64">
+            <a href="#home" class="w3-button w3-light-grey"
+                ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
+            >
+            <p>
+                Powered by
+                <a
+                    href="https://www.w3schools.com/w3css/default.asp"
+                    title="W3.CSS"
+                    target="_blank"
+                    class="w3-hover-text-light-green"
+                    >w3.css</a
+                >
+            </p>
+        </footer>
+
+        <script src="../script/jquery-3.7.0.js"></script>
+        <script src="../script/navbar.js"></script>
+        <script src="../script/navmenu.js"></script>
+    </body>
+</html>
