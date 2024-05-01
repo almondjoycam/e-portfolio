@@ -1,3 +1,4 @@
+/* Defaults */
 body,
 html {
     height: 100%;
@@ -8,58 +9,85 @@ html {
 }
 
 /* Navigation Bar */
+nav {
+    overflow-y: visible;
+}
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
 nav a.this::before {
     content: "\276C\2000";
 }
-
 nav a.this::after {
     content: "\2000\276D";
 }
-
 nav a::before,
 nav a::after {
     content: "\2002\2008";
 }
+nav .has-submenu {
+    position: relative;
+}
+nav ul.submenu {
+    display: none;
+    list-style-type: none;
+}
+nav .has-submenu:hover ul,
+nav .has-submenu.open ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+@media screen and (min-width: 1024px) {
+    nav .has-submenu:hover ul,
+    nav .has-submenu.open ul {
+        flex-direction: row;
+    }
+    nav ul.submenu {
+        font-size: 1rem;
+        width: max-content;
+        z-index: 1;
+        margin: 0;
+    }
+    nav ul.submenu li {
+        padding: 8px 16px;
+    }
+}
 
-/* Create a Parallax Effect */
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
+/* Header */
+.bgimg-1 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
     background-image: url("../img/ouprpe.svg");
     min-height: 100%;
 }
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    /* background-image: url("/w3images/parallax2.jpg"); */
-    min-height: 400px;
+.bgimg-1 div {
+    white-space: nowrap;
 }
-
-/* Third image (Contact) */
-.bgimg-3 {
-    /* background-image: url("/w3images/parallax3.jpg"); */
-    min-height: 400px;
-}
-
 .w3-wide {
     letter-spacing: 10px;
 }
 .w3-hover-opacity {
     cursor: pointer;
 }
+@media only screen and (max-device-width: 1600px) {
+    /* Turn off parallax scrolling for tablets and phones */
+    .bgimg-1 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
+
+/* Content */
 h3 {
     background-image: url("../img/header.svg");
     background-color: rgba(205, 134, 63, 0.5);
     min-width: 100%;
-    box-shadow: 0 10px 5px -5px #000 ;
+    box-shadow: 0 10px 5px -5px #000;
     margin-top: 2em;
 }
 h4 {
@@ -67,10 +95,6 @@ h4 {
 }
 p {
     padding: 8px 20px;
-}
-img {
-    width: 90%;
-    margin: 1em 0 0;
 }
 ul {
     text-align: left;
@@ -86,23 +110,22 @@ em.exp {
     padding: 0 0.5em 1em;
 }
 
-/* About Me "Embedded" Content */
-div.embed {
-    overflow: auto scroll;
-    height: 30vh;
-    /* scrollbar-color: #000000aa #e7e7e780; */
+/* Images */
+p.attribution {
+    font-size: 0.8em;
+    font-style: italic;
 }
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        background-attachment: scroll;
-        min-height: 400px;
-    }
+img {
+    width: 90%;
+    margin: 1em 0 0;
 }
-
+img.attribution {
+    width: 1em;
+    height: 1em;
+    margin: 0.125em;
+    padding-bottom: 0.125em;
+    display: inline;
+}
 @media screen and (min-width: 1600px) {
     img {
         max-width: 30%;
@@ -124,4 +147,11 @@ div.embed {
         width: 100%;
         min-height: 50vh;
     }
+}
+
+/* About Me "Embedded" Content */
+div.embed {
+    overflow: auto scroll;
+    height: 30vh;
+    /* scrollbar-color: #000000aa #e7e7e780; */
 }

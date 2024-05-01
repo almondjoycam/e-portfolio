@@ -1,8 +1,8 @@
 // Change style of navbar on scroll
 window.onscroll = function () {
-    myFunction();
+    appearOnScroll();
 };
-function myFunction() {
+function appearOnScroll() {
     var navbar = document.getElementById("myNavbar");
     if (
         document.body.scrollTop > 100 ||
