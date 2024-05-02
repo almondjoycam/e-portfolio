@@ -16,6 +16,9 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
 }
+nav a:focus {
+    background-color: #9a6fa080;
+}
 nav a.this::before {
     content: "\276C\2000";
 }
@@ -117,7 +120,7 @@ p.attribution {
 }
 img {
     width: 90%;
-    margin: 1em 0 0;
+    margin: 1em 0;
 }
 img.attribution {
     width: 1em;
@@ -128,13 +131,9 @@ img.attribution {
 }
 @media screen and (min-width: 1600px) {
     img {
-        max-width: 30%;
-        max-height: 40vh;
+        max-height: 50vh;
         object-fit: cover;
-        object-position: 0% 100%;
-        margin: 1em;
-        float: left;
-        display: block;
+        object-position: 0% 60%;
     }
     div ul {
         margin: 1em;
@@ -143,9 +142,10 @@ img.attribution {
         list-style-position: inside;
     }
     div.classroom {
-        clear: left;
+        clear: both;
         width: 100%;
         min-height: 50vh;
+        margin-bottom: 1em;
     }
 }
 
