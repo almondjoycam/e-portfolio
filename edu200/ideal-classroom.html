@@ -1,417 +1,305 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <title>Camber's Teaching Portfolio</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-            rel="stylesheet"
-            href="https://www.w3schools.com/w3css/4/w3.css" />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Lato" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-        <link rel="stylesheet" type="text/css" href="../style/style.css" />
-    </head>
 
-    <body>
-        <!-- Navbar (sit on top) -->
-        <!-- TODO: change this to actually semantic markup! -->
-        <header class="w3-top">
-            <nav class="w3-bar" id="myNavbar">
-                <a
-                    class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-                    href="javascript:void(0);"
-                    onclick="toggleFunction()"
-                    title="Toggle Navigation Menu">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
-                <a
-                    href="../about.html"
-                    class="w3-bar-item w3-button w3-hide-small"
-                    ><i class="fa fa-user" aria-hidden="true"></i> ABOUT</a
-                >
-                <div class="has-submenu">
-                    <a
-                        href="edu200.html"
-                        class="w3-bar-item w3-button w3-hide-small submenu-toggle"
-                        ><i class="fa fa-book" aria-hidden="true"></i> EDU
-                        200</a
-                    >
-                    <ul class="submenu">
-                        <li>
-                            <a
-                                class="w3-bar-item w3-button"
-                                href="philosophy.html"
-                                >Philosophy</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="w3-bar-item w3-button"
-                                href="ideal-classroom.html"
-                                >Ideal Classroom</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="w3-bar-item w3-button"
-                                href="communication.html"
-                                >Communicating with Parents</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="w3-bar-item w3-button"
-                                href="instructional-strategies.html"
-                                >Instructional Strategies</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="w3-bar-item w3-button"
-                                href="technology.html"
-                                >Instructional Technology</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                class="w3-bar-item w3-button"
-                                href="assessment.html"
-                                >Assessment</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+<head>
+    <title>Camber's Teaching Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
+</head>
 
-            <!-- Navbar on small screens -->
-            <nav
-                id="navDemo"
-                class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-                <a href="../about.html" class="w3-bar-item w3-button">ABOUT</a>
-                <a href="edu200.html" class="w3-bar-item w3-button this"
-                    >EDU 200</a
-                >
-            </nav>
-        </header>
-
-        <!-- First Parallax Image with Logo Text -->
-        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-            <div
-                class="w3-display-middle w3-padding-large w3-black w3-center w3-animate-opacity">
-                <h1 class="w3-xlarge w3-wide">Foundations of Education</h1>
-                <h2 class="w3-large">EDU 200</h2>
-            </div>
-        </div>
-
-        <main class="w3-content w3-center">
-            <h3>Ideal Classroom</h3>
-            <div class="classroom w3-container">
-                <div class="w3-half w3-left w3-margin-right w3-margin-small">
-                    <picture>
-                        <source
-                            srcset="../img/classroom-fidget-toys-640.jpg"
-                            media="(max-width: 640px)" />
-                        <source
-                            srcset="../img/classroom-fidget-toys-1024.jpg"
-                            media="(min-width: 640px)" />
-                        <source
-                            srcset="../img/classroom-fidget-toys-2560.jpg"
-                            media="(min-width: 1024px)" />
-                        <img
-                            src="../img/classroom-fidget-toys-640.jpg"
-                            alt="Classroom Fidget Toys" />
-                    </picture>
-                    <p class="attribution">
-                        "<a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://commons.wikimedia.org/w/index.php?curid=81133315"
-                            >Fidget Toys 1</a
-                        >" by
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://commons.wikimedia.org/wiki/User:MissLunaRose12"
-                            >MissLunaRose12</a
-                        >
-                        is licensed under
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://creativecommons.org/licenses/by-sa/4.0/?ref=openverse"
-                            >CC BY-SA 4.0
-                            <img
-                                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
-                                class="attribution"
-                                aria-hidden="true" /><img
-                                src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
-                                class="attribution"
-                                aria-hidden="true" /><img
-                                src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
-                                class="attribution"
-                                aria-hidden="true" /></a
-                        >.
-                    </p>
-                </div>
-                <p>
-                    This is an image of various fidget toys on a rainbow striped
-                    mat.
-                </p>
-                <ul>
+<body>
+    <!-- Navbar (sit on top) -->
+    <!-- TODO: change this to actually semantic markup! -->
+    <header class="w3-top">
+        <nav class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="../about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"
+                    aria-hidden="true"></i> ABOUT</a>
+            <div class="has-submenu">
+                <a href="edu200.html" class="w3-bar-item w3-button w3-hide-small submenu-toggle"><i class="fa fa-book"
+                        aria-hidden="true"></i> EDU
+                    200</a>
+                <ul class="submenu">
                     <li>
-                        A Koosh ball has many strings of multicoloured rubber in
-                        yellow, blue, green, and red.
+                        <a class="w3-bar-item w3-button" href="philosophy.html">Philosophy</a>
                     </li>
                     <li>
-                        A three-by-three Rubik's cube rests on the mat, solved,
-                        with the blue side facing up and the yellow and red
-                        sides facing to the side.
+                        <a class="w3-bar-item w3-button" href="ideal-classroom.html">Ideal Classroom</a>
                     </li>
                     <li>
-                        A plastic tube is filled with a yellow-tinted fluid, and
-                        there are metallic sequins shaped like stars and music
-                        notes suspended within.
+                        <a class="w3-bar-item w3-button" href="communication.html">Communicating with Parents</a>
                     </li>
                     <li>
-                        Two rubber puffer balls with spikes, one dark green and
-                        the other bright orange, are at either end of the tube.
+                        <a class="w3-bar-item w3-button" href="instructional-strategies.html">Instructional
+                            Strategies</a>
                     </li>
                     <li>
-                        A handheld white object has three ball sockets arranged
-                        in a triangular pattern.
+                        <a class="w3-bar-item w3-button" href="technology.html">Instructional Technology</a>
                     </li>
                     <li>
-                        A loop of bumpy plastic elbow joints in blue, purple,
-                        and green has been twisted into a serpentine shape.
-                    </li>
-                    <li>
-                        A white plastic bristle brush is on its side, with a
-                        textured handle.
+                        <a class="w3-bar-item w3-button" href="assessment.html">Assessment</a>
                     </li>
                 </ul>
-                <p>
-                    These are examples of the countless fidget toys that exist.
-                    My ideal classroom would have a wide variety of items like
-                    these to fidget with to meet a variety of students' sensory
-                    needs. Providing students a source of non-disruptive sensory
-                    input can help them focus better, learn better, and feel
-                    better in the classroom.
-                </p>
-                <p>
-                    Students learn best in a multitude of diverse ways, and one
-                    way to accommodate alternative learning is to provide a way
-                    for students to learn through audio recordings. Containing
-                    the various audio resources within headphones can be crucial
-                    to maintaining the order in a classroom where many things
-                    are going on at the same time.
-                </p>
             </div>
-            <div class="classroom w3-container">
-                <div class="w3-right w3-half w3-margin-left w3-margin-small">
-                    <picture>
-                        <source
-                            srcset="../img/classroom-reading-533.jpg"
-                            media="(max-width: 533px)" />
-                        <source
-                            srcset="../img/classroom-reading-1365.jpg"
-                            media="(min-width: 534px)" />
-                        <source
-                            srcset="../img/classroom-reading-2592.jpg"
-                            media="(min-width: 1366px)" />
-                        <img
-                            src="../img/classroom-reading-533.jpg"
-                            alt="A person with short hair is reading a book while wearing headphones." />
-                    </picture>
-                    <p class="attribution">
-                        "<a
-                            href="https://flickr.com/photos/quinnanya/5547136776/in/photolist-8Kwt4n-6CfJt7-8KzAAG-b8J4ec-8Kzhy9-8KwKXK-9SxpSH-4moc7P-28VsE-aSAX7R-4EJytM-XqBk-tcQAp-4XA5yB-Tz5iMm-9sbwvf-2emfrdS-2emfrnu-23PoGLr-23PoH2r-23PoGV4-CDLjfM-2emfr4y-aEDbEr-d9YX8e-jxcg25-7u4vkd-5DPELU-9sZgeW-8h1BRk-5VM9PA-ckUkp9-8sDhP-7CeDgp-74t33E-oLMeaZ-Mv7NMd-2oLRtmu-AxQ4F-oyWPX-9sZfAQ-qVcFc3-5tyL3A-4hoiVC-FUxQJX-aKt6Xc-72iUMK-274whus-vzqb3-L1WSFh"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >Home 2.0 Alpha</a
-                        >" by
-                        <a
-                            href="https://flickr.com/photos/quinnanya/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >Quinn Dombrowski</a
-                        >
-                        is licensed under
-                        <a
-                            href="https://creativecommons.org/licenses/by-sa/2.0/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >CC BY-SA 2.0
-                            <img
-                                src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
-                                class="attribution"
-                                aria-hidden="true" /><img
-                                src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
-                                class="attribution"
-                                aria-hidden="true" /></a
-                        >.
-                    </p>
-                </div>
-                <p>
-                    This reading corner is a chair with plenty of natural light,
-                    furnished with a blanket. Potted plants and a bookshelf are
-                    visible in the background.
-                </p>
-                <p>
-                    Classrooms are often short on space, and so a way to
-                    conserve this space would be to set up seating space on top
-                    of bookshelves. Providing headphones also allows students to
-                    listen to music or audiobooks. Additionally, natural light
-                    and green spaces are very beneficial to learning. Tasking
-                    students with watering the plants may even foster a positive
-                    sense of responsibility.
-                </p>
-            </div>
-            <div class="classroom w3-container">
-                <div class="w3-half w3-left w3-margin-small w3-margin-right">
-                    <picture>
-                        <source
-                            srcset="../img/classroom-seating-400.jpg"
-                            media="(max-width: 400px)" />
-                        <source
-                            srcset="../img/classroom-seating-800.jpg"
-                            media="(min-width: 400px)" />
-                        <source
-                            srcset="../img/classroom-seating-2048.jpg"
-                            media="(min-width: 800px)" />
-                        <source
-                            srcset="../img/classroom-seating-5760.jpg"
-                            media="(min-width: 2048px)" />
-                        <img
-                            src="../img/classroom-seating-400.jpg"
-                            alt="Students in a classroom with a variety of desks, different cushions, and a small couch." />
-                    </picture>
-                    <p class="attribution">
-                        "<a
-                            href="https://images.all4ed.org/middle-school-english-language-arts-classroom"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >Middle school English language arts classroom</a
-                        >" by Allison Shelley for EDUimages is licensed under
-                        <a
-                            href="https://creativecommons.org/licenses/by-nc/4.0/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            >CC BY-NC 4.0
-                            <img
-                                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
-                                class="attribution"
-                                aria-hidden="true" /><img
-                                src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
-                                class="attribution"
-                                aria-hidden="true" /><img
-                                src="https://mirrors.creativecommons.org/presskit/icons/nc.svg"
-                                class="attribution"
-                                aria-hidden="true" /></a
-                        >.
-                    </p>
-                </div>
-                <p>
-                    In this image, there are many different examples of
-                    alternative seating choices to choose from! One table is
-                    lower to the ground and is furnished with cushioned mats. At
-                    least two tables have chairs resembling exercise balls. Many
-                    standard plastic chairs are spread throughout the room.
-                </p>
-                <p>
-                    Flexible seating such as the examples in this picture make
-                    the classroom look more colourful and exciting. It can also
-                    offer valuable sensory feedback for students who learn
-                    better while moving. I might have to put a wobble stool at
-                    my own desk.
-                </p>
-            </div>
-            <div class="classroom w3-container">
-                <div class="w3-half w3-right w3-margin-small w3-margin-left">
-                    <picture>
-                        <source
-                            srcset="../img/classroom-dry-erase-400.jpg"
-                            media="(max-width: 400px)" />
-                        <source
-                            srcset="../img/classroom-dry-erase-800.jpg"
-                            media="(min-width: 400px)" />
-                        <source
-                            srcset="../img/classroom-dry-erase-2048.jpg"
-                            media="(min-width: 800px)" />
-                        <img
-                            src="../img/classroom-dry-erase-400.jpg"
-                            alt="A dry erase wall filled with charts and sticky notes." />
-                    </picture>
-                    <p class="attribution">
-                        "<a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.flickr.com/photos/19695328@N00/8284992255"
-                            >New York Times</a
-                        >" by
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://www.flickr.com/photos/19695328@N00"
-                            >Molly Lewis</a
-                        >
-                        is licensed under
-                        <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            href="https://creativecommons.org/licenses/by/2.0/?ref=openverse"
-                            >CC BY 2.0
-                            <img
-                                src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
-                                class="attribution"
-                                aria-hidden="true" /><img
-                                src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
-                                class="attribution"
-                                aria-hidden="true" /></a
-                        >.
-                    </p>
-                </div>
-                <p>
-                    In this image, an entire wall has been transformed into a
-                    dry-erase board. Charts cover a large portion of the wall,
-                    and sticky notes are used to categorise tasks in one of the
-                    charts.
-                </p>
-                <p>
-                    My algebra teacher had coated the walls of her room in dry
-                    erasable paint, and a frequent class activity was to solve
-                    problems by literally writing on the walls. This class made
-                    such an impact on me that I haven't forgotten it since, and
-                    I'd like to implement something similar in my own classroom.
-                    There's something so transgressively appealing about being
-                    able and allowed to write on the walls.
-                </p>
-            </div>
-        </main>
 
-        <!-- Footer -->
-        <footer class="w3-center w3-black w3-padding-64">
-            <a href="#home" class="w3-button w3-light-grey"
-                ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
-            >
+            <div class="has-submenu">
+                <a href="edu250/edu250.html" class="w3-bar-item w3-button w3-hide-small submenu-toggle"><i
+                        class="fa fa-universal-access" aria-hidden="true"></i> EDU
+                    250</a>
+                <ul class="submenu">
+                    <li>
+                        <a class="w3-bar-item w3-button" href="edu250/legal-aspects.html">Legal Aspects and Critical
+                            Issues</a>
+                    </li>
+                    <li>
+                        <a class="w3-bar-item w3-button" href="edu250/iep.html">IEP Meeting Observations</a>
+                    </li>
+                    <li>
+                        <a class="w3-bar-item w3-button" href="edu250/coteaching.html">Co-Teaching Observations</a>
+                    </li>
+                    <li>
+                        <a class="w3-bar-item w3-button" href="edu250/udl.html">Universal Design for Learning</a>
+                    </li>
+                    <li>
+                        <a class="w3-bar-item w3-button" href="edu250/characteristics.html">Characteristics of
+                            Exceptional Learners</a>
+                    </li>
+                    <li>
+                        <a class="w3-bar-item w3-button" href="edu250/petey.html">Petey</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Navbar on small screens -->
+        <nav id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="../about.html" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="edu200.html" class="w3-bar-item w3-button this">EDU 200</a>
+        </nav>
+    </header>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle w3-padding-large w3-black w3-center w3-animate-opacity">
+            <h1 class="w3-xlarge w3-wide">Foundations of Education</h1>
+            <h2 class="w3-large">EDU 200</h2>
+        </div>
+    </div>
+
+    <main class="w3-content w3-center">
+        <h3>Ideal Classroom</h3>
+        <div class="classroom w3-container">
+            <div class="w3-half w3-left w3-margin-right w3-margin-small">
+                <picture>
+                    <source srcset="../img/classroom-fidget-toys-640.jpg" media="(max-width: 640px)" />
+                    <source srcset="../img/classroom-fidget-toys-1024.jpg" media="(min-width: 640px)" />
+                    <source srcset="../img/classroom-fidget-toys-2560.jpg" media="(min-width: 1024px)" />
+                    <img src="../img/classroom-fidget-toys-640.jpg" alt="Classroom Fidget Toys" />
+                </picture>
+                <p class="attribution">
+                    "<a target="_blank" rel="noopener noreferrer"
+                        href="https://commons.wikimedia.org/w/index.php?curid=81133315">Fidget Toys 1</a>" by
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="https://commons.wikimedia.org/wiki/User:MissLunaRose12">MissLunaRose12</a>
+                    is licensed under
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="https://creativecommons.org/licenses/by-sa/4.0/?ref=openverse">CC BY-SA 4.0
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" class="attribution"
+                            aria-hidden="true" /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+                            class="attribution" aria-hidden="true" /><img
+                            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" class="attribution"
+                            aria-hidden="true" /></a>.
+                </p>
+            </div>
             <p>
-                Powered by
-                <a
-                    href="https://www.w3schools.com/w3css/default.asp"
-                    title="W3.CSS"
-                    target="_blank"
-                    class="w3-hover-text-light-green"
-                    >w3.css</a
-                >
+                This is an image of various fidget toys on a rainbow striped
+                mat.
             </p>
-        </footer>
+            <ul>
+                <li>
+                    A Koosh ball has many strings of multicoloured rubber in
+                    yellow, blue, green, and red.
+                </li>
+                <li>
+                    A three-by-three Rubik's cube rests on the mat, solved,
+                    with the blue side facing up and the yellow and red
+                    sides facing to the side.
+                </li>
+                <li>
+                    A plastic tube is filled with a yellow-tinted fluid, and
+                    there are metallic sequins shaped like stars and music
+                    notes suspended within.
+                </li>
+                <li>
+                    Two rubber puffer balls with spikes, one dark green and
+                    the other bright orange, are at either end of the tube.
+                </li>
+                <li>
+                    A handheld white object has three ball sockets arranged
+                    in a triangular pattern.
+                </li>
+                <li>
+                    A loop of bumpy plastic elbow joints in blue, purple,
+                    and green has been twisted into a serpentine shape.
+                </li>
+                <li>
+                    A white plastic bristle brush is on its side, with a
+                    textured handle.
+                </li>
+            </ul>
+            <p>
+                These are examples of the countless fidget toys that exist.
+                My ideal classroom would have a wide variety of items like
+                these to fidget with to meet a variety of students' sensory
+                needs. Providing students a source of non-disruptive sensory
+                input can help them focus better, learn better, and feel
+                better in the classroom.
+            </p>
+            <p>
+                Students learn best in a multitude of diverse ways, and one
+                way to accommodate alternative learning is to provide a way
+                for students to learn through audio recordings. Containing
+                the various audio resources within headphones can be crucial
+                to maintaining the order in a classroom where many things
+                are going on at the same time.
+            </p>
+        </div>
+        <div class="classroom w3-container">
+            <div class="w3-right w3-half w3-margin-left w3-margin-small">
+                <picture>
+                    <source srcset="../img/classroom-reading-533.jpg" media="(max-width: 533px)" />
+                    <source srcset="../img/classroom-reading-1365.jpg" media="(min-width: 534px)" />
+                    <source srcset="../img/classroom-reading-2592.jpg" media="(min-width: 1366px)" />
+                    <img src="../img/classroom-reading-533.jpg"
+                        alt="A person with short hair is reading a book while wearing headphones." />
+                </picture>
+                <p class="attribution">
+                    "<a href="https://flickr.com/photos/quinnanya/5547136776/in/photolist-8Kwt4n-6CfJt7-8KzAAG-b8J4ec-8Kzhy9-8KwKXK-9SxpSH-4moc7P-28VsE-aSAX7R-4EJytM-XqBk-tcQAp-4XA5yB-Tz5iMm-9sbwvf-2emfrdS-2emfrnu-23PoGLr-23PoH2r-23PoGV4-CDLjfM-2emfr4y-aEDbEr-d9YX8e-jxcg25-7u4vkd-5DPELU-9sZgeW-8h1BRk-5VM9PA-ckUkp9-8sDhP-7CeDgp-74t33E-oLMeaZ-Mv7NMd-2oLRtmu-AxQ4F-oyWPX-9sZfAQ-qVcFc3-5tyL3A-4hoiVC-FUxQJX-aKt6Xc-72iUMK-274whus-vzqb3-L1WSFh"
+                        target="_blank" rel="noopener noreferrer">Home 2.0 Alpha</a>" by
+                    <a href="https://flickr.com/photos/quinnanya/" target="_blank" rel="noopener noreferrer">Quinn
+                        Dombrowski</a>
+                    is licensed under
+                    <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank"
+                        rel="noopener noreferrer">CC BY-SA 2.0
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" class="attribution"
+                            aria-hidden="true" /><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"
+                            class="attribution" aria-hidden="true" /></a>.
+                </p>
+            </div>
+            <p>
+                This reading corner is a chair with plenty of natural light,
+                furnished with a blanket. Potted plants and a bookshelf are
+                visible in the background.
+            </p>
+            <p>
+                Classrooms are often short on space, and so a way to
+                conserve this space would be to set up seating space on top
+                of bookshelves. Providing headphones also allows students to
+                listen to music or audiobooks. Additionally, natural light
+                and green spaces are very beneficial to learning. Tasking
+                students with watering the plants may even foster a positive
+                sense of responsibility.
+            </p>
+        </div>
+        <div class="classroom w3-container">
+            <div class="w3-half w3-left w3-margin-small w3-margin-right">
+                <picture>
+                    <source srcset="../img/classroom-seating-400.jpg" media="(max-width: 400px)" />
+                    <source srcset="../img/classroom-seating-800.jpg" media="(min-width: 400px)" />
+                    <source srcset="../img/classroom-seating-2048.jpg" media="(min-width: 800px)" />
+                    <source srcset="../img/classroom-seating-5760.jpg" media="(min-width: 2048px)" />
+                    <img src="../img/classroom-seating-400.jpg"
+                        alt="Students in a classroom with a variety of desks, different cushions, and a small couch." />
+                </picture>
+                <p class="attribution">
+                    "<a href="https://images.all4ed.org/middle-school-english-language-arts-classroom" target="_blank"
+                        rel="noopener noreferrer">Middle school English language arts classroom</a>" by Allison Shelley
+                    for EDUimages is licensed under
+                    <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank"
+                        rel="noopener noreferrer">CC BY-NC 4.0
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" class="attribution"
+                            aria-hidden="true" /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+                            class="attribution" aria-hidden="true" /><img
+                            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" class="attribution"
+                            aria-hidden="true" /></a>.
+                </p>
+            </div>
+            <p>
+                In this image, there are many different examples of
+                alternative seating choices to choose from! One table is
+                lower to the ground and is furnished with cushioned mats. At
+                least two tables have chairs resembling exercise balls. Many
+                standard plastic chairs are spread throughout the room.
+            </p>
+            <p>
+                Flexible seating such as the examples in this picture make
+                the classroom look more colourful and exciting. It can also
+                offer valuable sensory feedback for students who learn
+                better while moving. I might have to put a wobble stool at
+                my own desk.
+            </p>
+        </div>
+        <div class="classroom w3-container">
+            <div class="w3-half w3-right w3-margin-small w3-margin-left">
+                <picture>
+                    <source srcset="../img/classroom-dry-erase-400.jpg" media="(max-width: 400px)" />
+                    <source srcset="../img/classroom-dry-erase-800.jpg" media="(min-width: 400px)" />
+                    <source srcset="../img/classroom-dry-erase-2048.jpg" media="(min-width: 800px)" />
+                    <img src="../img/classroom-dry-erase-400.jpg"
+                        alt="A dry erase wall filled with charts and sticky notes." />
+                </picture>
+                <p class="attribution">
+                    "<a target="_blank" rel="noopener noreferrer"
+                        href="https://www.flickr.com/photos/19695328@N00/8284992255">New York Times</a>" by
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.flickr.com/photos/19695328@N00">Molly
+                        Lewis</a>
+                    is licensed under
+                    <a target="_blank" rel="noopener noreferrer"
+                        href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">CC BY 2.0
+                        <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" class="attribution"
+                            aria-hidden="true" /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+                            class="attribution" aria-hidden="true" /></a>.
+                </p>
+            </div>
+            <p>
+                In this image, an entire wall has been transformed into a
+                dry-erase board. Charts cover a large portion of the wall,
+                and sticky notes are used to categorise tasks in one of the
+                charts.
+            </p>
+            <p>
+                My algebra teacher had coated the walls of her room in dry
+                erasable paint, and a frequent class activity was to solve
+                problems by literally writing on the walls. This class made
+                such an impact on me that I haven't forgotten it since, and
+                I'd like to implement something similar in my own classroom.
+                There's something so transgressively appealing about being
+                able and allowed to write on the walls.
+            </p>
+        </div>
+    </main>
 
-        <script src="../script/jquery-3.7.0.js"></script>
-        <script src="../script/navbar.js"></script>
-        <script src="../script/navmenu.js"></script>
-    </body>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <p>
+            Powered by
+            <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-light-green">w3.css</a>
+        </p>
+    </footer>
+
+    <script src="../script/jquery-3.7.0.js"></script>
+    <script src="../script/navbar.js"></script>
+    <script src="../script/navmenu.js"></script>
+</body>
+
 </html>
