@@ -16,17 +16,23 @@
     <!-- TODO: change this to actually semantic markup! -->
     <header class="w3-top">
         <nav class="w3-bar" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-                href="javascript:void(0);" onclick="openDropdownClick()" title="Toggle Navigation Menu">
-                <i class="fa fa-bars"></i>
+            <a href="#home" class="w3-bar-item w3-button w3-hide">
+                Skip to page content
             </a>
             <a href="#home" class="w3-bar-item w3-button this">HOME</a>
-            <a href="about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"
-                    aria-hidden="true"></i> ABOUT</a>
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-user" aria-hidden="true"></i>
+                ABOUT</a>
+
             <div class="has-submenu">
-                <a href="edu200/edu200.html" class="w3-bar-item w3-button w3-hide-small submenu-toggle"><i
-                        class="fa fa-book" aria-hidden="true"></i> EDU
-                    200</a>
+                <a href="#" class="w3-bar-item w3-button submenu-toggle" title="Open Submenu">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    EDU 200
+                    <i class="fa fa-angle-right menu-icon" aria-hidden="true"></i>
+                </a>
                 <ul class="submenu">
                     <li>
                         <a class="w3-bar-item w3-button" href="edu200/philosophy.html">Philosophy</a>
@@ -49,10 +55,14 @@
                     </li>
                 </ul>
             </div>
+
             <div class="has-submenu">
-                <a href="edu250/edu250.html" class="w3-bar-item w3-button w3-hide-small submenu-toggle"><i
-                        class="fa fa-universal-access" aria-hidden="true"></i> EDU
-                    250</a>
+                <a href="#" class="w3-bar-item w3-button submenu-toggle" title="Open Submenu">
+                    <i class="fa fa-universal-access" aria-hidden="true"></i>
+                    EDU 250
+                    <i class="fa fa-angle-right menu-icon" aria-hidden="true"></i>
+                </a>
+
                 <ul class="submenu">
                     <li>
                         <a class="w3-bar-item w3-button" href="edu250/legal-aspects.html">Legal Aspects and Critical
@@ -76,12 +86,6 @@
                     </li>
                 </ul>
             </div>
-        </nav>
-
-        <!-- Navbar on small screens -->
-        <nav id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
-            <a href="edu200/edu200.html" class="w3-bar-item w3-button">EDU 200</a>
         </nav>
     </header>
 
@@ -146,7 +150,6 @@
     </footer>
 
     <script src="script/jquery-3.7.0.js"></script>
-    <script src="script/navmenu.js"></script>
     <script src="script/navbar.js"></script>
 </body>
 

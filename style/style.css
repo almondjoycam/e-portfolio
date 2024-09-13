@@ -12,50 +12,71 @@ html {
 nav {
     overflow-y: visible;
 }
+
 nav a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
 nav a:focus {
     background-color: #9a6fa080;
 }
-nav a.this::before {
+
+/* nav a.this::before {
     content: "\276C\2000";
 }
+
 nav a.this::after {
     content: "\2000\276D";
 }
+
 nav a::before,
 nav a::after {
     content: "\2002\2008";
-}
-nav .has-submenu {
+} */
+
+/* nav .has-submenu {
     position: relative;
-}
+} */
+
 nav ul.submenu {
     display: none;
     list-style-type: none;
 }
-nav .has-submenu:hover ul,
-nav .has-submenu.open ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: baseline;
+
+nav .has-submenu.submenu-open ul {
+    display: inline;
 }
+
+nav .has-submenu.submenu-open li {
+    display: inherit;
+}
+
+nav .menu-icon.submenu-open {
+    transition: 0.5s ease;
+    transform: rotate(180deg);
+}
+
+nav a:not(:first-child),
+nav.nav-open div {
+    display: none;
+}
+
+nav.nav-open a:not(:first-child),
+nav.nav-open div {
+    display: inherit;
+}
+
 @media screen and (min-width: 1024px) {
-    nav .has-submenu:hover ul,
-    nav .has-submenu.open ul {
+    nav .has-submenu.submenu-open ul {
         flex-direction: row;
     }
+
     nav ul.submenu {
         font-size: 1rem;
         width: max-content;
         z-index: 1;
         margin: 0;
-    }
-    nav ul.submenu li {
-        padding: 8px 16px;
     }
 }
 
@@ -65,19 +86,24 @@ nav .has-submenu.open ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../img/ouprpe.svg");
+    background-image: url("/e-portfolio/img/ouprpe.svg");
     min-height: 100%;
 }
+
 .bgimg-1 div {
     white-space: nowrap;
 }
+
 .w3-wide {
     letter-spacing: 10px;
 }
+
 .w3-hover-opacity {
     cursor: pointer;
 }
+
 @media only screen and (max-device-width: 1600px) {
+
     /* Turn off parallax scrolling for tablets and phones */
     .bgimg-1 {
         background-attachment: scroll;
@@ -87,27 +113,32 @@ nav .has-submenu.open ul {
 
 /* Content */
 h3 {
-    background-image: url("../img/header.svg");
+    background-image: url("/e-portfolio/img/header.svg");
     background-color: rgba(205, 134, 63, 0.5);
     min-width: 100%;
     box-shadow: 0 10px 5px -5px #000;
     margin-top: 2em;
 }
+
 h4 {
     font-style: italic;
 }
+
 p {
     padding: 8px 20px;
 }
+
 ul {
     text-align: left;
     width: 90%;
     margin: 10px;
 }
+
 em.goal {
     display: block;
     padding: 1em 0.5em 0;
 }
+
 em.exp {
     display: block;
     padding: 0 0.5em 1em;
@@ -118,10 +149,12 @@ p.attribution {
     font-size: 0.8em;
     font-style: italic;
 }
+
 img {
     width: 90%;
     margin: 1em 0;
 }
+
 img.attribution {
     width: 1em;
     height: 1em;
@@ -129,18 +162,21 @@ img.attribution {
     padding-bottom: 0.125em;
     display: inline;
 }
+
 @media screen and (min-width: 1600px) {
     img {
         max-height: 50vh;
         object-fit: cover;
         object-position: 0% 60%;
     }
+
     div ul {
         margin: 1em;
         padding: 0;
         text-align: left;
         list-style-position: inside;
     }
+
     div.classroom {
         clear: both;
         width: 100%;
