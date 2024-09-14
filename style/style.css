@@ -87,7 +87,7 @@ nav.nav-open div {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/e-portfolio/img/ouprpe.svg");
-    min-height: 100%;
+    height: 30vw;
 }
 
 .bgimg-1 div {
