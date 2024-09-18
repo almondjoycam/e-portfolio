@@ -2,6 +2,7 @@
 body,
 html {
     height: 100%;
+    overflow: scroll;
     color: #e7e7e7;
     background-color: #332535;
     line-height: 1.8;
