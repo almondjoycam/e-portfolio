@@ -29,7 +29,7 @@ section.has-dark-background h6 {
     --r-block-margin: 20px;
     --r-heading-margin: 0 0 20px 0;
     --r-heading-font: inherit;
-    --r-heading-color: #000;
+    --r-heading-color: inherit;
     --r-heading-line-height: 1.2;
     --r-heading-letter-spacing: normal;
     --r-heading-text-transform: none;
@@ -44,7 +44,7 @@ section.has-dark-background h6 {
     --r-link-color: inherit;
     --r-link-color-dark: inherit;
     --r-link-color-hover: inherit;
-    --r-selection-background-color: inherit;
+    --r-selection-background-color: #000000aa;
     --r-selection-color: inherit;
     --r-overlay-element-bg-color: 0, 0, 0;
     --r-overlay-element-fg-color: 240, 240, 240;

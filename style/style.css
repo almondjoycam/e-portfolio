@@ -1,17 +1,45 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:FLAR@50&family=Wellfleet&display=swap');
+
 /* Defaults */
+:root {
+    --background: #332535;
+    --foreground: #eee4e1;
+    --accent-pink: #ff3cc7;
+    --accent-blue: #3eb8ff;
+    --accent-green: #8bc34a;
+}
+
 body,
 html {
     height: 100%;
-    overflow: scroll;
-    color: #e7e7e7;
-    background-color: #332535;
+    /* overflow: scroll; */
+    color: var(--foreground);
+    background-color: var(--background);
     line-height: 1.8;
+    font-family: Commissioner, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Wellfleet", Georgia, 'Times New Roman', Times, serif;
+}
+
+::selection,
+::-moz-selection {
+    background-color: #000000aa;
+    color: var(--accent-green);
 }
 
 /* Navigation Bar */
 nav {
     overflow-y: visible;
+    position: sticky;
 }
 
 nav a {
@@ -23,22 +51,9 @@ nav a:focus {
     background-color: #9a6fa080;
 }
 
-/* nav a.this::before {
-    content: "\276C\2000";
+nav a.this {
+    border-bottom: 1px solid --foreground;
 }
-
-nav a.this::after {
-    content: "\2000\276D";
-}
-
-nav a::before,
-nav a::after {
-    content: "\2002\2008";
-} */
-
-/* nav .has-submenu {
-    position: relative;
-} */
 
 nav ul.submenu {
     display: none;
@@ -91,13 +106,13 @@ nav.nav-open div {
     height: 30vw;
 }
 
-.bgimg-1 div {
+/* .bgimg-1 div {
     white-space: nowrap;
 }
 
 .w3-wide {
     letter-spacing: 10px;
-}
+} */
 
 .w3-hover-opacity {
     cursor: pointer;
@@ -114,10 +129,7 @@ nav.nav-open div {
 
 /* Content */
 h3 {
-    background-image: url("/e-portfolio/img/header.svg");
-    background-color: rgba(205, 134, 63, 0.5);
     min-width: 100%;
-    box-shadow: 0 10px 5px -5px #000;
     margin-top: 2em;
 }
 
@@ -127,6 +139,7 @@ h4 {
 
 p {
     padding: 8px 20px;
+    font-size: 1.1em;
 }
 
 ul {
