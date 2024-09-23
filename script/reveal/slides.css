@@ -51,8 +51,9 @@ section.has-dark-background h6 {
 }
 
 .reveal-viewport {
-    background: #fff;
+    background: inherit;
     background-color: var(--r-background-color);
+    max-height: 80vh;
 }
 
 .reveal {
