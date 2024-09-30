@@ -107,14 +107,6 @@ nav.nav-open div {
     height: 30vw;
 }
 
-/* .bgimg-1 div {
-    white-space: nowrap;
-}
-
-.w3-wide {
-    letter-spacing: 10px;
-} */
-
 .w3-hover-opacity {
     cursor: pointer;
 }
@@ -147,6 +139,10 @@ ul {
     text-align: left;
     width: 90%;
     margin: 10px;
+}
+
+ul.margin-left {
+    margin-left: 128px;
 }
 
 em.goal {
