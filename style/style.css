@@ -5,8 +5,8 @@
 :root {
     --background: #332535;
     --foreground: #eee4e1;
-    --accent-pink: #ff3cc7;
-    --accent-blue: #3eb8ff;
+    --accent-pink: #720052;
+    --accent-blue: #196896;
     --accent-green: #8bc34a;
 }
 
@@ -17,7 +17,7 @@ html {
     color: var(--foreground);
     background-color: var(--background);
     line-height: 1.8;
-    font-family: Commissioner, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Commissioner, Tahoma, Geneva, Verdana, sans-serif;
     font-variation-settings: "FLAR" 75;
     font-size: 1em;
 }
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Wellfleet", Georgia, 'Times New Roman', Times, serif;
+    font-family: "Wellfleet", Georgia, Times, serif;
 }
 
 ::selection,
@@ -48,12 +48,15 @@ nav a {
     text-transform: uppercase;
 }
 
-nav a:focus {
-    background-color: #9a6fa080;
+nav a:focus,
+nav a.this:focus {
+    background-color: var(--accent-pink);
+    color: var(--foreground);
 }
 
 nav a.this {
-    border-bottom: 1px solid --foreground;
+    background-color: var(--accent-blue);
+    color: var(--foreground);
 }
 
 nav ul.submenu {
@@ -132,7 +135,7 @@ h4 {
 
 p {
     padding: 8px 20px;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 ul {
