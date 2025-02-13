@@ -1,20 +1,13 @@
 // Change style of navbar on scroll
-window.onscroll = function () {
-    appearOnScroll();
-};
-function appearOnScroll() {
-    var navbar = document.getElementById("myNavbar");
-    if (
-        document.body.scrollTop > 100 ||
-        document.documentElement.scrollTop > 100
-    ) {
-        navbar.className =
-            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+let navbar = $("#myNavbar");
+$(document.body).on("scroll", function (scrollEvent) {
+    appearOnScroll(scrollEvent.currentTarget.scrollTop);
+});
+function appearOnScroll(height) {
+    if (height > 100) {
+        navbar.addClass("w3-card w3-animate-top w3-white");
     } else {
-        navbar.className = navbar.className.replace(
-            " w3-card w3-animate-top w3-white",
-            ""
-        );
+        navbar.removeClass("w3-card w3-animate-top w3-white");
     }
 }
 

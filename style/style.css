@@ -1,23 +1,27 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:FLAR@50&family=Wellfleet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Rethink+Sans&display=swap');
 
 /* Defaults */
 :root {
-    --background: #332535;
-    --foreground: #eee4e1;
-    --accent-pink: #720052;
-    --accent-blue: #196896;
-    --accent-green: #8bc34a;
+    --background: #dddddd;
+    --foreground: #131313;
+    --foreground-inverse: #dddddd;
+    --accent-pink: #945674;
+    --accent-purple: #615685;
+    --accent-blue: #418ab3;
+    --accent-green: #a6b727;
+    --accent-orange: #db6a48;
+    --link: #db6a48;
 }
 
 body,
 html {
-    height: 100%;
-    /* overflow: scroll; */
+    height: 100vh;
+    overflow: scroll;
     color: var(--foreground);
     background-color: var(--background);
     line-height: 1.8;
-    font-family: Commissioner, Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Rethink Sans", Tahoma, Geneva, Verdana, sans-serif;
     font-variation-settings: "FLAR" 75;
     font-size: 1.1em;
 }
@@ -28,36 +32,37 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Wellfleet", Georgia, Times, serif;
-}
-
-::selection,
-::-moz-selection {
-    background-color: #000000aa;
-    color: var(--accent-green);
+    font-family: "Arbutus Slab", Georgia, Times, serif;
 }
 
 /* Navigation Bar */
+header {
+    position: sticky;
+    top: 0;
+}
+
 nav {
     overflow-y: visible;
-    position: sticky;
     width: 100%;
 }
 
-nav a {
+nav a:link,
+nav a:visited {
     text-decoration: none;
     text-transform: uppercase;
+    color: var(--foreground);
 }
 
 nav a:focus,
 nav a.this:focus {
     background-color: var(--accent-pink);
-    color: var(--foreground);
+    color: var(--foreground-inverse);
+    display: inherit;
 }
 
 nav a.this {
     background-color: var(--accent-blue);
-    color: var(--foreground);
+    color: var(--foreground-inverse);
 }
 
 nav ul.submenu {
@@ -102,29 +107,31 @@ nav.nav-open div {
 }
 
 /* Header */
-.bgimg-1 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("/e-portfolio/img/ouprpe.svg");
-    height: 30vw;
+h1 {
+    display: block;
+    background: var(--accent-pink);
+    background: linear-gradient(17deg, var(--accent-pink), var(--accent-purple) 33%, var(--accent-blue) 66%, var(--accent-green) 100%);
+    border-radius: 17px;
+    color: var(--foreground-inverse);
+    margin: auto;
+    padding: 1em 0;
+    font-size: 1.5em;
 }
 
-.w3-hover-opacity {
-    cursor: pointer;
-}
-
-@media only screen and (max-device-width: 1600px) {
-
-    /* Turn off parallax scrolling for tablets and phones */
-    .bgimg-1 {
-        background-attachment: scroll;
-        min-height: 400px;
+@media screen and (min-width: 1024px) {
+    h1 {
+        min-height: 5em;
+        height: 30vh;
+        padding: 10vh 2em;
+        font-size: 2.3em;
     }
 }
 
 /* Content */
+main {
+    margin-bottom: 2em;
+}
+
 h3 {
     min-width: 100%;
     margin-top: 2em;
@@ -136,6 +143,11 @@ h4 {
 
 p {
     padding: 8px 20px;
+}
+
+a:link,
+a:visited {
+    color: var(--link);
 }
 
 a:hover,
@@ -279,4 +291,10 @@ div.embed {
     overflow: auto scroll;
     height: 30vh;
     /* scrollbar-color: #000000aa #e7e7e780; */
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
 }
